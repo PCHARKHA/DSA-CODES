@@ -1,1 +1,6 @@
-*.class 
+*.class
+*.log
+*.tmp
+out/
+bin/
+
