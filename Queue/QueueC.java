@@ -20,7 +20,7 @@ public class QueueC {
         // no need of isFull
         public static void add(int data){
             Node newNode =new Node(data);
-            if(head == null){
+            if(head == null){       //adding first element
                 head=tail=newNode;
             }
             else{
@@ -34,7 +34,7 @@ public class QueueC {
                 return -1;
             }
             int front = head.data;
-            if(tail == head){
+            if(tail == head){   //removing single element
                 tail=head=null;
             }
             else{
