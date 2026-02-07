@@ -1,3 +1,4 @@
+package Strings;
 public class Substr {
     public static String substring(String str, int si,int ei){
         String substr  = "";

@@ -1,3 +1,4 @@
+package Recursion;
 //Print sum of first natural n nos using recursion
 
 public class Recursion1 {

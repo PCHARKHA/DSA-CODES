@@ -1,3 +1,4 @@
+package Recursion;
 public class Recursion2 {
     public static int calcFact(int n){
         if(n == 0 || n == 1){

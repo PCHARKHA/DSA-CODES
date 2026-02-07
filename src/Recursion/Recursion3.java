@@ -1,4 +1,5 @@
 //To print x^n (stack height = n)
+package Recursion;
 public class Recursion3 {
     public static int calcPow(int x,int n){
         if (n==0){          //base case 1

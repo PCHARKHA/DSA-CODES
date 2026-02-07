@@ -1,3 +1,4 @@
+package Recursion;
 //Check if an array is sorted(strictly increasing) "{1,2,3,4,5}",return type boolean
 public class Recursion8I {
     public static boolean isSorted(int[] arr,int idx) {

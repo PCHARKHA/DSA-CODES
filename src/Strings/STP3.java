@@ -1,7 +1,8 @@
 /*Date : 17 Sept
 Write a java program to check the given string is palindrome or not 
  * take input of string from user 
-*/                                          
+*/    
+package Strings;                                      
 import java.util.*;
 public class STP3 {
     public static  String printRev(String s , int idx){

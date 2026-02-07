@@ -1,3 +1,4 @@
+package Strings;
 public class Strin {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder(" ");

@@ -1,7 +1,7 @@
 /* Date : 17 sept STP 3
  * Count the words in the sentence : I am Java trainer!
  */
-
+package Strings;
 import java.util.Scanner;
 
 public class WordCount {

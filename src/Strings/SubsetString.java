@@ -1,3 +1,4 @@
+package Strings;
 public class SubsetString {
     public static void findSubset(String str , String ans,int i){
         //base case

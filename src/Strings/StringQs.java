@@ -1,4 +1,5 @@
 //Count how many times lowercase vowels occurred in a String entered by user
+package Strings;
 import java.util.*;
 public class StringQs{
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
 //Implementing Queue using array
+package Queue;
 public class QueueA {
     static class Queue{
         static int[] arr;

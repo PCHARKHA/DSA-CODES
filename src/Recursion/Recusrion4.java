@@ -1,5 +1,5 @@
+package Recursion;
 //to calculate power of x^n but stack height should be log n 
-
 public class Recusrion4 {
     public static int calPow(int x,int n){
         if(n==0){

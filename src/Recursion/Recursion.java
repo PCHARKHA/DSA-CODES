@@ -1,3 +1,4 @@
+package Recursion;
 public class Recursion{
     public static void printNum(int n){
         if(n == 10)      //base case 

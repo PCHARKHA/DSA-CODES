@@ -1,3 +1,4 @@
+package Arrays;
 public class Arrays_Practice2 {
     //I ] Check if array is sorted in ascending order
     public static boolean Ascending_Sort (int[]arr){

@@ -1,3 +1,4 @@
+package Recursion;
 //print a string "abcd" in reverse order
 public class Recursion6I {
     public static void printRev(String str,int idx){
