@@ -1,4 +1,5 @@
 //Implementing Stack using 2 queues
+package Queue;
 import java.util.LinkedList;
 import java.util.Queue;
 public class QueueE {

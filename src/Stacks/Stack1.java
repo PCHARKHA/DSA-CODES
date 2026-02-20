@@ -1,4 +1,5 @@
 //Implementing Stack using ArrayList
+package Stacks;
 import java.util.*;
 class Stack{
    static  ArrayList<Integer> list = new ArrayList<>();

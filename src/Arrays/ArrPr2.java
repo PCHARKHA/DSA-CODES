@@ -1,4 +1,5 @@
 //Count how many times each element appears in an array (without HashMap).
+package Arrays;
 import java.util.*;
 public class ArrPr2 {
     //boolean array is created to avoid double counting

@@ -5,6 +5,7 @@ that is strictly greater than x.
 If no such element exists, consider the next greater element as -1.
 arr = [6, 3, 8, 2, 7]
 */
+package Stacks;
 import java.util.Stack;
 public class Stack6 {
     public static void main(String[] args) {
@@ -27,6 +28,7 @@ public class Stack6 {
             //step 3
             s.push(i); //we are pushing index of element on stack
         }
+        //print the next greater element array
         for(int i =0;i<nextGreater.length;i++){
             System.out.print(nextGreater[i] + " ");
         }

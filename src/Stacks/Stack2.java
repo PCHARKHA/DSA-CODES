@@ -1,6 +1,7 @@
 /*Implementing Stack using a LinkedList
 *Note : Stack ka top is LinkedList ka head
 */
+package Stacks;
 public class Stack2{
     static class Node{
         int data;
@@ -21,13 +22,13 @@ public class Stack2{
 
          //push
         public static void push(int data){
-            Node newNode = new Node(data);
+            Node newNode = new Node(data); //naya node banao
             if (isEmpty()){
-                head = newNode;
+                head = newNode;  //newNode becomes head of the linked list
                 return;
             }
-            newNode.next = head; // step 1
-            head = newNode; //step 2
+            newNode.next = head; // previous head ko newNode ke next bana do
+            head = newNode; //newNode ko head bana do
          }
 
          //pop
@@ -36,7 +37,7 @@ public class Stack2{
                 return -1;
             }
             int top = head.data;
-            head = head.next;
+            head = head.next; //head ke next ko head bana do 
             return top;
          }
 

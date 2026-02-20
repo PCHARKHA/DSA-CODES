@@ -1,14 +1,15 @@
 // Q1)Push at the bottom of the stack
 //Solution : Recursion : O(n)
 //In recursion - jo cheez pehle nikalti hai voh baadmei dalti hai aur vice versa
+package Stacks;
 import java.util.Stack;
 public class Stack3{
     public static void pusHAtBottom(Stack<Integer> s,int data){
-        if(s.isEmpty()){
+        if(s.isEmpty()){ //base case
             s.push(data);
             return;
         }
-        int top = s.pop();
+        int top = s.pop();  //top ko nikalte jao till stack becomes empty
         pusHAtBottom(s,data);
         s.push(top);
     }

@@ -1,7 +1,7 @@
 //Implementation of circular queues using Arrays
 // major change in remove & add operations : updation part
 //edge cases :1)removing last element   2)adding first element
-
+package Queue;
 public class QueueB {
     static class Queue{
         static int[] arr;

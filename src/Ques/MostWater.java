@@ -1,6 +1,7 @@
 /*height = [1,8,6,2,5,4,8,3,7]
 Use two lines to form such a container that it holds maximum water
 Approach: 1)Brute Force     2)Two pointer Approach */
+package Ques;
 import java.util.*;
 class mostWater{
 // 1: BruteForce

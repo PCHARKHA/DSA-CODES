@@ -1,4 +1,5 @@
 //Implementing Queue using a LinkedList
+package Queue;
 public class QueueC {
     static class Node{
         int data;

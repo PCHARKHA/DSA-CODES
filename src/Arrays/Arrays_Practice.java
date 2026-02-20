@@ -1,5 +1,5 @@
+package Arrays;
 import java.util.Arrays;
-
 public class Arrays_Practice{
     //Syntax of array : datatype[] variable name = new datatype[size]
         //int[] arr = new int[5] ;

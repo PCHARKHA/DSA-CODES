@@ -2,6 +2,7 @@
 /*  Condition 1 -If elememt> max then value of prev max is alloted to second Max
 Condition 2 - secMax<elememt<max then directly update secMax only
 */
+package Arrays;
 import java.util.*;
 public class ArrPr1 {
     public static  int Secmax(int[]arr ){

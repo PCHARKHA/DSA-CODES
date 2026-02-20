@@ -1,4 +1,4 @@
-
+package Queue;
 //Implementing Queue using two stacks
 import java.util.Stack;
 class QueueD{

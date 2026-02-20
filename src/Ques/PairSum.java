@@ -1,6 +1,7 @@
 /*Find if any pair in sorted arrayList has a target sum 
 list  = [1,2,3,4,5]
 Approach: 1)Brute Force     2)Two pointer Approach */
+package Ques;
 import java.util.*;
 
 public class PairSum {
