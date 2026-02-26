@@ -9,11 +9,12 @@ public class MinAbsSum {
         int A[] = {4, 1, 8};
         int B[] = {2, 3, 6};
         int n = A.length;
+        int minSum = 0;
         //sort both arrays
         Arrays.sort(A);
         Arrays.sort(B);
 
-        int minSum = 0;
+        //pair elements and calculate sum of absolute differences
         for (int i = 0; i < n; i++) {
             minSum += Math.abs(A[i] - B[i]);
         }
