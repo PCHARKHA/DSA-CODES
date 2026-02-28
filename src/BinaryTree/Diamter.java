@@ -22,7 +22,7 @@ public class Diamter {
         }
         int leftHeight = height(root.left);
         int rightHeight = height(root.right);
-        return Math.max(leftHeight, rightHeight) + 1;
+        return Math.max(leftHeight, rightHeight)+1;
     }
 
     public static int calcDiameter(Node root){
@@ -31,7 +31,7 @@ public class Diamter {
         }
         int leftDiameter = calcDiameter(root.left);
         int rightDiameter = calcDiameter(root.right);
-        int selfDiameter = height(root.left) + height(root.right) + 1;
+        int selfDiameter = height(root.left) + height(root.right)+1;
         /* Cases :1. diameter lies in left subtree  2. diameter lies in right subtree 
         3. diameter passes through root node 
         We return maximum of these three cases as the diameter of the tree.

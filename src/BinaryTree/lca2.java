@@ -15,30 +15,32 @@ public class lca2 {
     }
 
     public static Node lcaOptimized(Node root, int n1, int n2) {
-
-        // base case
-        if (root == null) {
+        //case 0 - tree is empty
+        if(root == null){
             return null;
         }
-    
-        // if current node matches either n1 or n2
-        if (root.data == n1 || root.data == n2) {
+        //case 1 :Current node(root) is n1 or n2
+        if(root.data == n1 || root.data == n2){
             return root;
         }
-    
-        // recursive calls
-        Node leftLca = lcaOptimized(root.left, n1, n2);
-        Node rightLca = lcaOptimized(root.right, n1, n2);
-    
-        // if both sides return non-null, current node is LCA
-        if (leftLca != null && rightLca != null) {
+        //recursive calls
+        Node left = lcaOptimized(root, n1, n2);
+        Node right =lcaOptimized(root,n1,n2);
+        
+        //case 2: n1 and n2 are in different subtrees
+        //basically ek value left mai mili aur ek right mai
+        if (left != null && right != null) {
             return root;
         }
-    
-        // otherwise return non-null child
-        return (leftLca != null) ? leftLca : rightLca;
-    }
 
+        //case 3:both lie in the same subtree
+        if (left != null) {
+            return left;
+        } else {
+            return right;
+        }
+    }
+       
     public static void main(String[] args) {
 
         /*
