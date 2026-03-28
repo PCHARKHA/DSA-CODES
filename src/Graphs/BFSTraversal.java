@@ -39,6 +39,8 @@ public class BFSTraversal {
         //vertex-6
         graph[6].add(new Edge(6,5,1));
     }
+    
+    //bfs function
     public static void bfs(ArrayList<Edge> graph[]){
         Queue<Integer> q=  new LinkedList<>();
         boolean vis[]=  new boolean[graph.length];
