@@ -1,7 +1,8 @@
+//T.C : O(V+E) where V is the number of vertices and E is the number of edges in the graph
+
 package Graphs;
 import java.util.*;
-
-public class BFSTraversal {
+public class HasPath{
     static class Edge{
         int src;
         int dest;
@@ -11,8 +12,7 @@ public class BFSTraversal {
             this.dest = d;
             this.wt = w;
         }
-    }
-    public static void creategraph(ArrayList<Edge> graph[]){
+    }public static void creategraph(ArrayList<Edge> graph[]){
         for(int i=0; i<graph.length; i++){
             graph[i] = new ArrayList<>();
         }
@@ -39,38 +39,28 @@ public class BFSTraversal {
         //vertex-6
         graph[6].add(new Edge(6,5,1));
     }
-    
-    //bfs function
-    public static void bfs(ArrayList<Edge> graph[]){
-        Queue<Integer> q=  new LinkedList<>();
-        boolean vis[]=  new boolean[graph.length];
-        q.add(0);
-        vis[0] = true;   //
 
-        while(!q.isEmpty()){
-            int curr = q.remove();
-            System.out.print(curr+" ");
-                //add neighbours
-                //how?:find edge &destination of edge is neighbour
-
-                for(int i=0; i<graph[curr].size(); i++){
-                    Edge e = graph[curr].get(i); 
-                    if(!vis[e.dest]){
-                        vis[e.dest] = true;   // ✅ mark here
-                        q.add(e.dest);
-                    }
-                }
-            }
-        
+    public static boolean haspath(ArrayList<Edge>[] graph, int src, int dest, boolean vis[]){
+        if(src == dest){
+            return true;
         }
-        
-    
+        vis[src] = true;
+        //loop to get neighbours of src
+        for(int i=0; i<graph[src].size(); i++){
+            Edge e = graph[src].get(i);
+            //e.dest is neighbour of src
+            if(!vis[e.dest] && haspath(graph, e.dest, dest, vis)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        int V =7;
+        int V = 7;
         ArrayList<Edge> graph[] = new ArrayList[V];
         creategraph(graph);
-        bfs(graph);
+        boolean vis[] = new boolean[V];
+        System.out.println(haspath(graph, 0, 5, vis));
     }
 }
-    
-
